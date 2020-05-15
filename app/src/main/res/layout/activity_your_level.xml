@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_menu"
+    tools:context=".YourLevel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Your_train_id"
+            android:paddingBottom="50dp"
+            android:paddingTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B8860B"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_level"
+            android:onClick="n_1_click"
+            android:text="НАЧИНАЮЩИЙ 1"
+            android:textColor="#b8860b"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_level"
+            android:onClick="n_2_click"
+            android:text="НАЧИНАЮЩИЙ 2"
+            android:textColor="#b8860b"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="370dp"
+
+            android:layout_height="50dp"
+            android:background="@drawable/button_level"
+            android:onClick="p_1_click"
+            android:text="ПРОМЕЖУТОЧНЫЙ 1"
+            android:textColor="#b8860b"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="137dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_level"
+            android:onClick="p_2_click"
+            android:text="ПРОМЕЖУТОЧНЫЙ 2"
+            android:textColor="#b8860b"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="185dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_level"
+            android:onClick="pr_1_click"
+            android:text="ПРОДВИНУТЫЙ 1"
+            android:textColor="#b8860b"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="241dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_level"
+            android:onClick="pr_2_click"
+            android:text="ПРОДВИНУТЫЙ 2"
+            android:textColor="#b8860b"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="300dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

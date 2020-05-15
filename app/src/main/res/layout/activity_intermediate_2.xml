@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_menu"
+    tools:context=".Intermediate2">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-114dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="350dp"
+                android:layout_height="56dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/muscule_bang_stroka" />
+
+            <ImageView
+                android:id="@+id/upr_1"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/how_much_text_1"
+                android:textSize="15dp"
+                android:textColor="#DC143C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/upr_1_text"
+                android:textSize="15dp"
+                android:textColor="#b8860b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/upr_2"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/how_much_text_2"
+                android:textSize="15dp"
+                android:textColor="#DC143C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/upr_2_text"
+                android:textSize="15dp"
+                android:textColor="#b8860b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/upr_3"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/how_much_text_3"
+                android:textSize="15dp"
+                android:textColor="#DC143C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/upr_3_text"
+                android:textSize="15dp"
+                android:textColor="#b8860b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/upr_4"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/how_much_text_4"
+                android:textSize="15dp"
+                android:textColor="#DC143C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/upr_4_text"
+                android:textSize="15dp"
+                android:textColor="#b8860b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/upr_5"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/how_much_text_5"
+                android:textSize="15dp"
+                android:textColor="#DC143C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/upr_5_text"
+                android:textSize="15dp"
+                android:textColor="#b8860b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/upr_6"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/how_much_text_6"
+                android:textSize="15dp"
+                android:textColor="#DC143C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/upr_6_text"
+                android:textSize="15dp"
+                android:textColor="#b8860b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="#2a2a2e">
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView4"
+        android:background="#2a2a2e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_level"
+            android:gravity="center"
+            android:onClick="plan_click"
+            android:text="@string/plan"
+            android:textColor="#b8860b"
+            android:textSize="13sp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_level"
+            android:gravity="center"
+            android:onClick="otchet_click"
+            android:text="@string/otchet"
+            android:textColor="#b8860b"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button_training"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_level"
+            android:gravity="center"
+            android:onClick="trains_click"
+            android:text="@string/training"
+            android:textColor="#b8860b"
+            android:textSize="13sp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_level"
+            android:gravity="center"
+            android:onClick="profile_click"
+            android:text="@string/profile"
+            android:textColor="#b8860b"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

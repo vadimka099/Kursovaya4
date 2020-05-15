@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_menu"
+    tools:context=".Music">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="350dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/muscule_bang_stroka" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="#2a2a2e"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="1.0">
+
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_level"
+            android:gravity="center"
+            android:onClick="plan_click"
+            android:text="@string/plan"
+            android:textColor="#b8860b"
+            android:textSize="13sp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_level"
+            android:gravity="center"
+            android:onClick="otchet_click"
+            android:text="@string/otchet"
+            android:textColor="#b8860b"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button_training"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_level"
+            android:gravity="center"
+            android:onClick="trains_click"
+            android:text="@string/training"
+            android:textColor="#b8860b"
+            android:textSize="13sp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_level"
+            android:gravity="center"
+            android:onClick="profile_click"
+            android:text="@string/profile"
+            android:textColor="#b8860b"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.308">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_level"
+                android:layout_marginRight="5dp"
+                android:textColor="#b8860b"
+                android:onClick="play"
+                android:text="СТАРТ" />
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_level"
+                android:textColor="#b8860b"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="pause"
+                android:text="ПАУЗА" />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_level"
+                android:textColor="#b8860b"
+                android:layout_weight="1"
+                android:onClick="stop"
+                android:text="СТОП" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/volumeControl"
+            android:theme="@style/SeekBarColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
